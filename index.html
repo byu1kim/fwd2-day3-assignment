@@ -28,7 +28,7 @@
               type="text"
               id="name"
               name="name"
-              placeholder="Name"
+              placeholder="Full names..."
               required
             />
             <label for="email" class="visually-hidden">Email</label>
@@ -36,7 +36,7 @@
               type="email"
               id="email"
               name="email"
-              placeholder="Email"
+              placeholder="Email address..."
               required
             />
             <label for="password" class="visually-hidden">Password</label>
@@ -44,7 +44,10 @@
               type="password"
               id="password"
               name="password"
-              placeholder="Password"
+              placeholder="Password... min 8 chars"
+              pattern=".{8,}"
+              title="Password should have minimun 8 characters"
+              aria-lable="Password should have minimun 8 characters"
               required
             />
           </fieldset>
@@ -123,30 +126,31 @@
           <fieldset>
             <legend>
               <div class="num">3</div>
-              Overall Experience
+              Experience
             </legend>
-            <label class="standalone">Overall Experiences</label>
-            <input
-              type="radio"
-              id="beginner"
-              name="beginner"
-              value="beginner"
-            />
-            <label for="beginner">Beginner</label>
-            <input
-              type="radio"
-              id="intermediate"
-              name="intermediate"
-              value="intermediate"
-            />
-            <label for="intermediate">Intermediate</label>
-            <input
-              type="radio"
-              id="advanced"
-              name="advanced"
-              value="advanced"
-            />
-            <label for="advanced">Advanced</label>
+            <table>
+              <input
+                type="radio"
+                id="beginner"
+                name="beginner"
+                value="beginner"
+              />
+              <label for="beginner">Beginner</label>
+              <input
+                type="radio"
+                id="intermediate"
+                name="intermediate"
+                value="intermediate"
+              />
+              <label for="intermediate">Intermediate</label>
+              <input
+                type="radio"
+                id="advanced"
+                name="advanced"
+                value="advanced"
+              />
+              <label for="advanced">Advanced</label>
+            </table>
           </fieldset>
           <fieldset>
             <legend>
