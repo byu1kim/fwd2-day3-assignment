@@ -2,9 +2,131 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sign Up Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <section class="form-container">
+        <h1>Signup</h1>
+        <form action="/" method="POST">
+          <fieldset>
+            <legend>
+              <div class="num">1</div>
+              Account Info
+            </legend>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required />
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+          </fieldset>
+          <fieldset>
+            <legend>
+              <div class="num">2</div>
+              Dev Skills
+            </legend>
+            <label class="standalone">Programming Languages</label>
+            <input type="checkbox" id="html" name="html" value="html" />
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="css" value="css" />
+            <label for="css">CSS</label>
+            <input
+              type="checkbox"
+              id="javascript"
+              name="javascript"
+              value="javascript"
+            />
+            <label for="javascript">Javascript</label>
+            <input type="checkbox" id="php" name="php" value="php" />
+            <label for="php">PHP</label>
+          </fieldset>
+          <fieldset>
+            <legend>
+              <div class="num">3</div>
+              Overall Experience
+            </legend>
+            <label class="standalone">Overall Experiences</label>
+            <input
+              type="radio"
+              id="beginner"
+              name="beginner"
+              value="beginner"
+            />
+            <label for="beginner">Beginner</label>
+            <input
+              type="radio"
+              id="intermediate"
+              name="intermediate"
+              value="intermediate"
+            />
+            <label for="intermediate">Intermediate</label>
+            <input
+              type="radio"
+              id="advanced"
+              name="advanced"
+              value="advanced"
+            />
+            <label for="advanced">Advanced</label>
+          </fieldset>
+          <fieldset>
+            <legend>
+              <div class="num">4</div>
+              Other
+            </legend>
+            <label for="referredby">How did you hear about us?</label>
+            <select name="referredby" id="referredby">
+              <option>Please select...</option>
+              <optgroup label="Person">
+                <option value="friend">Friend</option>
+                <option value="family">Family</option>
+                <option value="colleague">Colleague</option>
+              </optgroup>
+              <optgroup label="Media">
+                <option value="internet">Internet</option>
+                <option value="radio">Radio</option>
+                <option value="tv">TV</option>
+                <option value="newpaper">Newspaper</option>
+              </optgroup>
+              <optgroup label="Other" id="others">
+                <option value="magic">Magic!</option>
+                <option value="other">Other</option>
+              </optgroup>
+            </select>
+            <label for="detail" id="hidden" class="hidden"
+              >Details, please...</label
+            >
+            <input
+              type="text"
+              id="detail"
+              name="detal"
+              placeholder="Do tell"
+              class="hidden"
+            />
+            <label for="comments">Comments</label>
+            <textarea
+              name="comments"
+              id="comments"
+              cols="40"
+              rows="6"
+            ></textarea>
+          </fieldset>
+          <input type="hidden" name="userid" value="byul" />
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Clear form" />
+        </form>
+      </section>
+    </main>
+    <footer>&copy; 2023 Byul Kim</footer>
+    <script src="./scripts/script.js"></script>
+  </body>
 </html>

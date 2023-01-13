@@ -1,0 +1,14 @@
+3. Add HTML form code to match the mock-up located below “WD2-A01-screenshot.png” file
+
+   c. Email field should reject as invalid on submit unless it contains a valid email address
+
+4. Create CSS styles to match the included mock-up.
+   a. Background should have a linear gradient
+
+   i. View the video file: “WD2-A01.mov” or “WD2-A01.mp4” to see how the inputs look when focused and behave when invalid
+
+5. View your completed web page in a browser
+
+6. Make sure the form inputs behave as expected and that your form is set up to post the data, not submit via get. Clicking the Submit button most likely SHOULD cause an error in your browser (unless you have set up a server that receives and handles posted data).
+
+7. For the final challenge point, choosing "Magic!" or "Other..." in the How did you hear about us section should display an otherwise hidden label and a textarea asking the user to provide additional details.
