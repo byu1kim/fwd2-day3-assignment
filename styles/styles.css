@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  background: linear-gradient(to bottom, #56ccf1, #d1f2fc);
+  background: linear-gradient(to bottom, #fdc751, #f93116);
   margin: 0;
 }
 
@@ -72,7 +72,7 @@ legend {
 
 .num {
   border-radius: 50px;
-  background-color: #5fcf7f;
+  background-color: #153d6d;
   width: 2rem;
   height: 2rem;
   display: flex;
@@ -104,7 +104,7 @@ textarea {
 input:focus,
 textarea:focus {
   outline: none;
-  border: 0.1rem solid #5fcf7f;
+  border: 3px solid #fdc751;
 }
 
 select {
@@ -135,14 +135,15 @@ input[type="reset"] {
 }
 
 input[type="submit"] {
-  background: #5fcf7f;
-  color: #555;
+  background: #153d6d;
+  color: white;
   cursor: pointer;
   font-weight: 600;
 }
 
 input[type="reset"] {
   background-color: white;
+  color: red;
   border: 1px solid rgba(0, 0, 0, 0.15);
   cursor: pointer;
   margin-top: 1.5rem;
